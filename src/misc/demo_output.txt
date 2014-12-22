@@ -1,0 +1,54 @@
+
+finished classification: standard naive Bayes, piece count vectors
+results:
+	total correct:	 5496 / 8040 (0.68)
+	white correct:	 3481 / 5014 (0.69)
+	black correct:	 2015 / 3026 (0.67)
+	tie correct:	 0 / 0 (NaN)
+
+finished classification: complementary naive Bayes, piece count vectors
+results:
+	total correct:	 5732 / 8040 (0.71)
+	white correct:	 3616 / 5014 (0.72)
+	black correct:	 2116 / 3026 (0.70)
+	tie correct:	 0 / 0 (NaN)
+
+finished classification: logistic regression, piece count vectors
+results:
+	total correct:	 5869 / 8040 (0.73)
+	white correct:	 4053 / 5014 (0.81)
+	black correct:	 1816 / 3026 (0.60)
+	tie correct:	 0 / 0 (NaN)
+
+finished classification: standard naive Bayes, chess-specific heuristic vectors
+results:
+	total correct:	 6625 / 8040 (0.82)
+	white correct:	 4168 / 5014 (0.83)
+	black correct:	 2457 / 3026 (0.81)
+	tie correct:	 0 / 0 (NaN)
+
+finished classification: complementary naive Bayes, chess-specific heuristic vectors
+results:
+	total correct:	 6625 / 8040 (0.82)
+	white correct:	 4168 / 5014 (0.83)
+	black correct:	 2457 / 3026 (0.81)
+	tie correct:	 0 / 0 (NaN)
+
+finished classification: logistic regression, chess-specific heuristic vectors
+results:
+	total correct:	 6271 / 8040 (0.78)
+	white correct:	 4083 / 5014 (0.81)
+	black correct:	 2188 / 3026 (0.72)
+	tie correct:	 0 / 0 (NaN)
+
+summary of results using various turnsFromLast:
+	turnsFromLast=2:	0.82
+	turnsFromLast=4:	0.80
+	turnsFromLast=6:	0.78
+	turnsFromLast=8:	0.77
+	turnsFromLast=10:	0.76
+	turnsFromLast=12:	0.74
+	turnsFromLast=14:	0.74
+	turnsFromLast=16:	0.72
+	turnsFromLast=18:	0.71
+	turnsFromLast=20:	0.70
