@@ -35,7 +35,7 @@ final_presentation.pdf
 
 Files related to the PGN parser:
 src/main/java/.../rjb/chess/*
-src/test/java/.../rjb/chess
+src/test/java/.../rjb/chess/*
 
 Files related to the Mahout classifiers:
 src/main/java/.../rjb/classifier/*
