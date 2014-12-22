@@ -1,0 +1,95 @@
+
+========== OVERVIEW ==========
+
+This is Raymond Barker's (rjb2150) final project for
+Columbia University EECS E6893 (Big Data Analytics).
+
+The project name is Game Outcome Analysis.
+
+Specifically, it's focused on predicting the outcome
+of chess games given only a single board state.
+
+Note that chess games are stored in a standardized
+format known as Portable Game Notation (PGN).
+
+This repository contains the following major source
+code components:
+• A library to parse and vectorize PGN files
+• A library for classifying vectors using Mahout
+• A demonstration script which uses these together
+
+Note that my development environment was Eclipse on OS X.
+
+See below for additional details.
+
+========== FILES ==========
+
+The files in this repository are described below.
+
+This file:
+README
+
+Final project report and presentation:
+final_report.pdf
+final_presentation.pdf
+
+Files related to the PGN parser:
+src/main/java/.../rjb/chess/*
+src/test/java/.../rjb/chess
+
+Files related to the Mahout classifiers:
+src/main/java/.../rjb/classifier/*
+
+Demo code which combines the parser and classifiers:
+src/main/java/.../rjb/Demo.java
+
+Test PGN files:
+src/data/*
+
+Example output from the demo:
+src/misc/demo_output.txt
+
+Files related to building the project in Eclipse:
+.settings/*
+.classpath
+.project
+pom.xml
+
+File to exclude some files from the repository:
+.gitignore
+
+License file:
+LICENSE
+
+========== BACKGROUND ==========
+
+For more background see the final report, final presentation, and
+the following project description.
+
+The goal of this project was to be able to answer to following question: 
+• given a game state, who will win? 
+
+Specifically, this project focused on games that are: 
+• two-team 
+• each team can be represented as a multiset of predefined members 
+
+Many games fall into this category: 
+• chess (each team is composed of N pawns, M rooks, etc.) 
+• deck-building games (each team is composed of predefined cards) 
+• MMORPGs (each team is composed of various “classes”) 
+
+However, I ultimately was only able to look at chess games.
+
+Dataset: The dataset used is a corpus of chess games in the public domain,
+compiled by Norman Pollock, available here: http://hoflink.com/~npollock/chess.html 
+• dataset id: gm2006.pgn 
+• number of games: 74,726 
+• number of players: 1,227 
+• minimum player Elo rating: 2475 
+• years included: 2006 - 2014 
+• gameplay restrictions: no blitz or correspondence games 
+
+Language: Java (personally, I developed on OS X) 
+
+Analytics: primarily Mahout, with various other support libraries (Guava, etc.)
+
